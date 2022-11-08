@@ -95,7 +95,8 @@ main a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50vw; }
+  width: 50vw;
+  padding: 100px 0 0; }
 
 .main_principal_presentacion {
   background-image: url(../img/navfondo.png);
