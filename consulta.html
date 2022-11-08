@@ -12,8 +12,8 @@
   </head>
   <body>
     <header class="main_header">
-      <div class="main_header_titulo">
-        <h1>Sticker Planet</h1>
+      <div >
+        <a href="./index.html"><h1 class="main_header_titulo">Sticker Planet</h1></a>
       </div>
       <nav>
         <ul class="main_header_nav">
@@ -51,21 +51,31 @@
     </header>
     <main class="consulta_main">
       <h2>Dejanos tu consulta</h2>
-      <div class="consulta_main_formulario">
-        <form>
-          <div><input type="text" name="name" placeholder="Nombre y Apellido" /></div>
-          <div><input type="email" name="email" placeholder="email" /></div>
-          <div><input type="text" name="phone" placeholder="Numero de Telefono" /></div>
-          <div><textarea
-            name="consulta"
-            cols="30"
-            rows="10"
-            placeholder="coloque su consulta"
-          ></textarea></div>
-          <div><input type="submit" value="enviar consulta" /></div>
-          <div><input type="reset" value="limpiar consulta" /></div>
-        </form>
-      </div>
+      <section class=" consulta_main_contenedor">
+        <div>
+          <video class="consulta_main_video"
+                src="./img/videoconsulta.mp4"
+                autoplay
+                muted
+                loop
+              >
+        </div>
+        <div class="consulta_main_formulario">
+          <form>
+            <div><input type="text" name="name" placeholder="Nombre y Apellido" /></div>
+            <div><input type="email" name="email" placeholder="email" /></div>
+            <div><input type="text" name="phone" placeholder="Numero de Telefono" /></div>
+            <div><textarea
+              name="consulta"
+              cols="30"
+              rows="10"
+              placeholder="coloque su consulta"
+            ></textarea></div>
+            <div><input type="submit" value="enviar consulta" /></div>
+            <div><input type="reset" value="limpiar consulta" /></div>
+          </form>
+        </div>
+      </section>
     </main>
     <footer >
       <div class="footer_cont">

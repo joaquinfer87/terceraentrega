@@ -76,8 +76,13 @@ main a {
   display: block; }
 
 .main_header ul li:hover ul {
-  display: block;
-  text-shadow: 10px 10px 20px #000000; }
+  display: block; }
+
+.main_header li:hover a {
+  color: #1dd3f8; }
+
+.main_header li:hover p {
+  color: #1dd3f8; }
 
 .main_principal {
   background-image: url(../img/stars-svgrepo-com.svg);
@@ -184,7 +189,6 @@ main a {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
-  width: 100%;
   justify-content: center; }
 
 .main_principal_informacion ul,
@@ -227,6 +231,7 @@ a {
   cursor: pointer; }
 
 .main_principal_video {
+  height: 60%;
   border-radius: 10px;
   border-style: solid;
   border-color: #7947d6;
@@ -275,50 +280,6 @@ footer li {
     width: 100vw; }
   li {
     list-style: none; }
-  .main_header {
-    width: 100vw;
-    background-image: url(./img/navfondo.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    display: grid;
-    grid-template-columns: 200px auto;
-    justify-content: space-between; }
-  .main_header_titulo {
-    color: #ffff;
-    font-family: "retropix";
-    font-size: 20px;
-    width: 50vw;
-    display: inline;
-    text-align: start; }
-  .main_header a,
-  .main_header p {
-    color: white;
-    text-decoration: none;
-    font-family: "openSansRegular";
-    font-size: 30px; }
-  .main_header_nav {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    justify-self: start;
-    gap: 0 20px;
-    z-index: 1;
-    margin-right: 20px; }
-  .main_header_nav ul li {
-    display: none;
-    position: relative;
-    font-family: "openSansRegular";
-    font-size: 30px; }
-  .main_header ul ul {
-    display: none;
-    position: absolute; }
-  .main_header ul ul li {
-    display: block; }
-  .main_header ul li:hover ul {
-    display: block;
-    text-shadow: 10px 10px 20px #000000; }
   .main_principal {
     background-image: url(../img/stars-svgrepo-com.svg);
     background-size: cover;
@@ -353,7 +314,7 @@ footer li {
   .main_principal_presentacion_frase {
     font-family: "openSansBold";
     color: #ffffff;
-    text-shadow: 10px 10px 20px #f03f9c;
+    text-shadow: 10px 10px 20px #1dd3f8;
     font-weight: bold;
     font-size: 40px; }
   .main_principal_presentacion_imagen {
@@ -452,10 +413,11 @@ footer li {
     font-size: 50px;
     cursor: pointer; }
   .main_principal_video {
+    width: 490px;
+    height: 848px;
     border-radius: 10px;
     border-style: solid;
-    border-color: #7947d6;
-    border-width: 5px; }
+    border-color: #7947d6; }
   footer {
     background-image: url(../img/navfondo.png);
     background-size: cover;
@@ -613,6 +575,20 @@ footer li {
   background-repeat: repeat;
   background-size: auto; }
 
+.consulta_main_contenedor {
+  width: 40%;
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.consulta_main_video {
+  height: 50vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #7947d6;
+  border-width: 5px; }
+
 .consulta_main h2 {
   color: #7947d6;
   font-family: "openSansbold";
@@ -686,7 +662,7 @@ footer li {
   .main_header_titulo {
     color: #ffff;
     font-family: "retropix";
-    font-size: 20px;
+    font-size: 116%;
     width: 50vw;
     display: inline;
     text-align: start; }
@@ -714,8 +690,12 @@ footer li {
   .main_header ul ul li {
     display: block; }
   .main_header ul li:hover ul {
-    display: block;
-    background-color: #000000; }
+    display: block; }
+  .main_header li:hover a {
+    color: #1dd3f8;
+    border-bottom: 2px solid #1dd3f8; }
+  .main_header li:hover p {
+    color: #1dd3f8; }
   .main_nosotros {
     width: 100vw;
     background-image: url(../img/stars-svgrepo-com.svg);
@@ -823,17 +803,30 @@ footer li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px 0;
     background-image: url(../img/stars-svgrepo-com.svg);
     background-repeat: repeat;
     background-size: auto; }
+  .consulta_main_contenedor {
+    width: 40%;
+    display: grid;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: space-evenly; }
+  .consulta_main_video {
+    height: 50vh;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #7947d6;
+    border-width: 5px; }
   .consulta_main h2 {
     color: #7947d6;
     font-family: "openSansbold";
     font-size: 50px;
     text-align: center; }
   .consulta_main_formulario {
-    width: 100vw;
+    width: 100%;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -855,7 +848,8 @@ footer li {
     color: #7947d6;
     background: none;
     border: 2px solid #7947d6;
-    border-radius: 10px; }
+    border-radius: 10px;
+    align-items: center; }
   ::placeholder {
     font-family: "openSansbold";
     font-size: 20px;
