@@ -139,7 +139,7 @@ main a {
 .main_principal_presentacion_frase {
   font-family: "openSansBold";
   color: #ffffff;
-  text-shadow: 10px 10px 20px #f03f9c;
+  text-shadow: 10px 10px 20px #1dd3f8;
   font-weight: bold;
   font-size: 100%;
 }
@@ -843,12 +843,13 @@ footer li {
     z-index: 1;
     margin-right: 20px;
   }
-
-  .main_header_nav ul li {
+ 
+  .main_header_nav ul li{
     display: none;
     position: relative;
     font-family: "openSansRegular";
     font-size: 30px;
+
   }
   .main_header ul ul {
     display: none;
@@ -857,10 +858,12 @@ footer li {
 
   .main_header ul ul li {
     display: block;
+    
   }
 
   .main_header ul li:hover ul {
     display: block;
+    
   }
 
   .main_header li:hover a{
@@ -871,6 +874,8 @@ footer li {
   .main_header li:hover p{
     color: #1dd3f8;
   }
+
+ 
 
   .main_nosotros {
     width: 100vw;
